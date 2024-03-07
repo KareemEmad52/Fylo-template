@@ -6,7 +6,7 @@ function TestimonialBox({ image, desc, name, position }) {
             </p>
             <div className="flex items-center gap-[15px]">
                 <img
-                    src={`/src/assets/${image}`}
+                    src={image}
                     className="w-[50px] h-[50px] rounded-[50%] object-contain"
                 />
                 <div>

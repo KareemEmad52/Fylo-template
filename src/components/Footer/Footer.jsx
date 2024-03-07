@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import iconOne from '../../Assets/icon-phone.svg'
+import iconTwo from '../../Assets/icon-email.svg'
+import logoImg from "../../Assets/logo.svg"
+import iconLocation from "../../Assets/icon-location.svg"
 
 function Footer() {
     const [contact, setContact] = useState([
-        { icon: "icon-phone.svg", text: "+20121212121" },
-        { icon: "icon-email.svg", text: "example@fylo.com" },
+        { icon: iconOne, text: "+20121212121" },
+        { icon: iconTwo, text: "example@fylo.com" },
     ]);
     const [links, setLinks] = useState([
         "About Us",
@@ -25,15 +29,15 @@ function Footer() {
             <div className="container">
                 <a href="/">
                     <img
-                        src="/src/assets/logo.svg"
-                        alt="logo-img"
+                        src={logoImg}
+                        alt='logo-img'
                         className="w-[175px] h-[66px] object-contain"
                     />
                 </a>
                 <div className="flex justify-between flex-wrap flex-col md:flex-row gap-[30px] mt-[30px]">
                     <div className="flex items-start gap-[15px] w-[340px] max-w-full">
                         <img
-                            src="/src/assets/icon-location.svg"
+                            src={iconLocation}
                             alt="location-img"
                             className="w-[18px] h-[18px] object-contain"
                         />
@@ -50,7 +54,7 @@ function Footer() {
                                 className="flex items-center gap-[15px] mb-[15px] last-of-type:mb-0"
                             >
                                 <img
-                                    src={`/src/assets/${item.icon}`}
+                                    src={item.icon}
                                     alt="icon"
                                     className="w-[18px] h-[18px] object-contain"
                                 />

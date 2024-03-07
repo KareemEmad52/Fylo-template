@@ -1,6 +1,6 @@
 import React from 'react'
 import landingImage from '../../Assets/illustration-intro.png'
-
+import waveImg from '../../Assets/bg-curvy-desktop.svg'
 
 function Landing() {
     return <section className="bg-[#1c2230]">
@@ -33,7 +33,7 @@ function Landing() {
 
         <div className="w-full h-[200px]">
             <img
-                src="/src/assets/bg-curvy-desktop.svg"
+                src={waveImg}
                 className="w-full h-full"
             />
         </div>
