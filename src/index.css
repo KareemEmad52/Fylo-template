@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #181e2a;
+}
+
+@layer {
+  .container {
+    @apply mx-auto px-[30px];
+  }
+  .element-center {
+    @apply flex items-center justify-center;
+  }
+  .btn {
+    @apply bg-[#42b0d1] hover:bg-[#8cdae4] transition-all duration-200;
+  }
+}
